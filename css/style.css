@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color:#9DD6DF ;
+    font-weight: bolder;
+    padding: 20px;
+}
+h1{
+    padding: 20px;
+    border: 20px solid black;
+    color: black;
+    margin: 0px 40px 40px 40px;
+    text-align: center;
+
+}
+.barraNav{
+    list-style: none;
+}
+.barraNav li a{
+    text-decoration: none;
+}
+li{
+    display: inline-block;
+    font-size: 20px;
+}
+.tamañoDeletra{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+}
+main{
+    background-color: #9DD6DF ;
+    font-family: 'Fascinate', cursiva;
+}
+footer{
+    background-color: #47B5FF;
+}
+p{
+    font-weight: bolder;
+    font-size: 20px;
+}
+article{
+   
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+/**flexBox**/
+
+img,p{
+    width: 100%;
+    margin-top: 10px;
+    
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 10px;
+}
+.col{
+  padding: 20px;
+  margin: 10px;
+}
+.galeriaGrid{
+    grid-area: geleria;
+}
+footer{
+    grid-area: footer;
+}
