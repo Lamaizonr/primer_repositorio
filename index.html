@@ -8,12 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2? family=Fascinate&family=League+Gothic&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="barraNav">
+    <div class="indexGrid">
+        <header>
+        <nav class="headerNav">
+            <ul>
                 <li>
                     <a href="index.html">INICIO</a>
                 </li>
@@ -31,46 +33,56 @@
                 </li>
             </ul>
         </nav>
-    </header>
-    <main>
-        <h1 class="tamañoDeletra">BUHO SERVICIOS INTEGRALES</h1>
-        <section>
-            <h2>SERVICIOS</h2>
-            <picture>
-                <div class="row">
-                    <div class="col">
-                         <img src="./images/Electricidad-¿Quien-puede-ser-electricista-scaled.jpg" alt="">
-                         <p>ELECTRICIDAD</p>
-                    </div>
-            </picture>           
-                    <div class="col">
-                         <img src=".//images/PLOMERIA.jpg" alt="">
-                         <p>PLOMERIA</p>
-                    </div>   
-                    <div class="col">
-                          
-                         <img src="./images/REFRIGERACION.jpg" alt="">
-                         <p>REFRIGERACION</p>
-                    </div>   
-                    <div class="col">
-                         <img src="./images/GAS.jpg" alt="">
-                         <p>GAS</p>
-                    </div>
-                </div>
-        </section>
-    </main>    
-    <footer>
-        <div>
-            <p>REDES SOCIALES</p>
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/elbuhoserivicios">facebook</a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/buho.serviciosintegrales/">instagram</a>
-                </li>
-            </ul>
+        </header>
+        <h1 data-aos="zoom-in-down" class="titulo">BUHO SERVICIOS INTEGRALES</h1>
+        <div class="electricidad trabajo">
+            <img src="./images/Electricidad-¿Quien-puede-ser-electricista-scaled.jpg" alt="electricidad" data-aos="zoom-in-down">
         </div>
-    </footer>
+        <div class="plomeria trabajo">
+            <img src=".//images/PLOMERIA.jpg" alt="plomeria" data-aos="zoom-in-down">
+        </div>   
+        <div class="refrigeracion trabajo ">
+            <img src="./images/REFRIGERACION.jpg" alt="refrigeracion" data-aos="zoom-in-down">
+        </div>   
+        <div class="gas trabajo">
+            <img src="./images/GAS.jpg" alt="gas" data-aos="zoom-in-down">
+        </div>  
+        <footer>
+            <div class="container__footer">
+                <div class="box__footer">
+                    <div class="logo">
+                        <img src="./images/WhatsApp Image 2022-07-13 at 1.22.53 PM.jpeg" alt="">
+                    </Div>
+                    <div class="términos"></Div>
+                </Div>
+    
+                <div class="box__footer">
+                    <h2>Compañia</h2>
+                    <a href="#">Acerca de</a>
+                    <a href="#">Trabajos</a>
+                    <a href="#">Procesos</a>
+                    <a href="#">Servicios</a>              
+                </Div>
+    
+                <div class="box__footer">
+                    <h2>Redes Sociales</h2>
+                    <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                    <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                    <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+                </Div>
+    
+            </Div>
+    
+            <div class="box__copyright">
+                <Hr>
+                <p>Todos los derechos reservados © 2022 <b>BuhoServicosIntegrales</b></p>
+            </Div>
+        </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+    </div>
 </body>
 </html>
