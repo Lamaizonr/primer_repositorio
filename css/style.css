@@ -313,18 +313,27 @@ footer{
     }
 .serviciosElec{
     grid-area: serviciosElec;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 .servicioPlomeria{
     grid-area: servicioPlomeria;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 .servicioRefri{
     grid-area: servicioRefri;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 .servicioGas{
     grid-area: servicioGas;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 p{
     text-align: center;
+    font-family: 'Calabacín', cursiva;
 }
 @media screen and (max-width: 768px){
     .serviciosGrid{
@@ -343,7 +352,10 @@ p{
     }
 }
 
-/**obras**/
+h1{
+    font-size: 55px;
+    font-family:'Maven Pro', sans-serif;
+}
 
 
 

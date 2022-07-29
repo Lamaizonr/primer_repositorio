@@ -42,41 +42,46 @@
     <main>
         <h1>CONTACTO</h1>
     </main>
-    <article>
-        <form action="#">
-            <input type="text" placeholder="NOMBRE Y APELLIDO"><br>
-            <label for="email">EMAIL:
-                <input type="email" placeholder="aaa@gmail.com" name="email"><br>
-            </label>
-            <label for="Observaciones"> Observaciones:<br>
-                <textarea placeholder="Observaciones"></textarea>
-            </label> <br>
-            <input type="number" placeholder="DECIME TU EDAD"><br>
-            <div><p>Necesidad del servicio:</p>
-                <div>Urgente
-                    <input type="radio" name="lado" value="izquierda">
-                </div>
-                <div>No urgente
-                    <input type="radio" name="lado" value="derecha">
-                </div>
-            </div>
-            <p>Que servicio necesita?</p>
-            <select name="letra" id="letra"> 
-                <option value="HERRRERIA">HERRRERIA</option>
-                <option value="PLOMERIA">PLOMERIA</option>
-                <option value="CONSTRUCCION EN SECO">CONSTRUCCION EN SECO</option>
-                <option value="ELECTRICIDAD">ELECTRICIDAD</option>
-                <option value="REFRIGERACION">REFRIGERACION</option>
-            </select>
-            <div>Queres recibir info sobre nosotros?
-            <input type="checkbox" name="acepta" value="1"></div>
-            <input type="submit" value="SI">
-            <input type="reset" value="NO">
-        </form>
-    </article>
-</section>
-<footer class="text-center footer-style">
-    <div class="container">
+    <div class="container-fluid ">
+      <form class="row g-3">
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">DIRECCION</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">Nombre y Apellido</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Nombre y Apellido">
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">Ciudad</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">Elegir servicio</label>
+        <select id="inputState" class="form-select">
+          <option selected>SERVICIOS</option>
+          <option>Gas</option>
+          <option>Electricidad</option>
+          <option>Refrigeracion</option>
+          <option>Plomeria</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">Necesidad</label>
+        <input type="text" class="form-control" id="inputZip" placeholder="Uregente/NoUrgente">
+      </div>
+      <div class="col-12">
+        
+      </form>
+      <iframe  class="container-fluid" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12871.805022484143!2d-61.12867995!3d-36.24067805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1658969423016!5m2!1ses!2sar" width="1500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer class="text-center footer-style">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-4 footer-col">
                 <h3>DIRECCION</h3>
