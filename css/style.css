@@ -80,17 +80,19 @@ header{
     grid-area: gas;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 480px){
+    
     .indexGrid{
-        background-color: brown;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1fr);
         grid-template-areas: 
-        "header header"
-        "titulo titulo"
-        "electricidad plomeria"
-        "refrigeracion gas"
-        "footer footer"
+        "header"
+        "titulo"
+        "electricidad" 
+        "plomeria"
+        "refrigeracion" 
+        "gas"
+        "footer"
         ;
     }
     .headerNav ul{
@@ -98,7 +100,7 @@ header{
         flex-direction: column;
         justify-content: space-between;
     }
-}
+}**/
 
 /**OBRAS**/
 
@@ -337,7 +339,6 @@ p{
 }
 @media screen and (max-width: 768px){
     .serviciosGrid{
-        background-color: brown;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
