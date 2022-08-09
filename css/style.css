@@ -1,0 +1,327 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2? familia=Fascinación&familia=Liga+Gótico&familia=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/**index**/
+body {
+  background-color: #E4DCCF;
+  font-family: "Poppins", sans-serif;
+}
+
+.indexGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "header header header header" "titulo titulo  titulo  titulo" "electricidad plomeria refrigeracion gas" "footer footer footer footer";
+  gap: 20px;
+}
+
+/**barranav**/
+header {
+  grid-area: header;
+  background-color: #F0EBE3;
+}
+
+.headerNav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.headerNav ul li {
+  list-style: none;
+  margin: 0 20px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.headerNav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+/**titulo**/
+.titulo {
+  grid-area: titulo;
+  text-align: center;
+  align-items: center;
+  border-color: black;
+}
+
+/**imagenes index**/
+.trabajo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.electricidad {
+  grid-area: electricidad;
+}
+
+.plomeria {
+  grid-area: plomeria;
+}
+
+.refrigeracion {
+  grid-area: refrigeracion;
+}
+
+.gas {
+  grid-area: gas;
+}
+
+@media screen and (max-width: 480px) {
+  .indexGrid {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-areas: "header" "titulo" "electricidad" "plomeria" "refrigeracion" "gas" "footer";
+  }
+  .headerNav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.headerObras {
+  grid-area: header;
+  background-color: #F0EBE3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+.headerNavobras .ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.headerNavobras .ul .lis {
+  list-style: none;
+  margin: 0 20px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.headerNavobras .ul .li .a {
+  color: black;
+  text-decoration: none;
+  align-items: none;
+}
+
+/**imagenesobras**/
+.obras {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.obraArcada {
+  grid-area: obraArcada;
+}
+
+.obraCambioluz {
+  grid-area: obraCambioluz;
+}
+
+.obraGas {
+  grid-area: obraGas;
+}
+
+/**tiutloobras**/
+.titulObras {
+  grid-area: titulObras;
+  text-align: center;
+  align-items: center;
+  border-color: black;
+}
+
+/**footerobras**/
+.footerObras {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.footerObras ul li a {
+  text-decoration: none;
+  list-style: none;
+}
+
+/**nosotros**/
+.tituloNosotros {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+/**footer*/
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  background-color: #F0EBE3;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 0%;
+  margin-top: 5px;
+}
+
+footer {
+  width: 100%;
+  padding: 0px 0px;
+  background-image: url(../Images/background-footer.svg);
+  background-size: cover;
+  /*background-color: #d0f0f8;
+  -webkit-mask-size: cover;
+  mask-size: cover;*/
+}
+
+.container__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.box__footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.box__footer .logo img {
+  width: 180px;
+}
+
+.box__footer .terms {
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #7a7a7a;
+  font-size: 18px;
+}
+
+.box__footer h2 {
+  margin-bottom: 30px;
+  color: #343434;
+  font-weight: 700;
+}
+
+.box__footer a {
+  margin-top: 10px;
+  color: #0d0d0d;
+  font-weight: 600;
+}
+
+.box__footer a:hover {
+  opacity: 0.8;
+}
+
+.box__footer a .fab {
+  font-size: 20px;
+}
+
+.box__copyright {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px;
+}
+
+.box__copyright p {
+  margin-top: 20px;
+  color: #0d0d0d;
+}
+
+.box__copyright hr {
+  border: none;
+  height: 1px;
+  background-color: #343434;
+}
+
+/**SERVICIOS**/
+.serviciosGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "header header" "titulo titulo" "servicioElec servicioPlomeria" "servicioRefri servicioGas" "footer footer";
+  gap: 20px;
+}
+
+.tituloServicios {
+  grid-area: titutloServicios;
+  text-align: center;
+  align-items: center;
+  border-color: black;
+}
+
+.serviciosElec {
+  grid-area: serviciosElec;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.servicioPlomeria {
+  grid-area: servicioPlomeria;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.servicioRefri {
+  grid-area: servicioRefri;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.servicioGas {
+  grid-area: servicioGas;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-family: "Calabacín", cursiva;
+}
+
+@media screen and (max-width: 768px) {
+  .serviciosGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header " "titulo" "servicioElec" "servicioPlomeria" "servicioRefri" "servicioGas" "footer";
+  }
+}
+h1 {
+  font-size: 55px;
+  font-family: "Maven Pro", sans-serif;
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*# sourceMappingURL=style.css.map */
